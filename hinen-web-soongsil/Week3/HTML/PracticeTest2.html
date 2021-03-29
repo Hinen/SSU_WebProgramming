@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td><b>시작 그룹</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="new" type="radio" name="startGroup" value="new" checked="checked"/>
+                        <label for="new">새 탭에서 페이지 열기</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="stop" type="radio" name="startGroup" value="stop"/>
+                        <label for="stop">중단한 위치에서 계속하기</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="other" type="radio" name="startGroup" value="other"/>
+                        <label for="other">특정 페이지 또는 페이지 모음 열기</label>
+                    </td>
+                </tr>
+            </table>
+
+            <br/>
+            <table>
+                <tr>
+                    <td><b>개인정보 및 보안</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="service" type="checkbox" value="service" checked="checked"/>
+                        <label for="service">동기화 및 서비스</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="loginAllow" type="checkbox" value="loginAllow" checked="checked"/>
+                        <label for="loginAllow">로그인 허용</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="load" type="checkbox" value="load"/>
+                        <label for="load">페이지 미리 로드</label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
