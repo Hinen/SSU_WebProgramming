@@ -6,6 +6,13 @@
         <style>
             #header > h1 { color : red; }
             #section > h1 { color: blue; }
+
+            /*
+            body에서는 table의 자식인 tbody가 생략되었기 때문에 아래의 style은 적용이 되지 않는다.
+            따라서 style 지정시 tbody를 명시 해주어야 한다.
+            table > tr > th { color : red; }
+            */
+            table > tbody > tr > th { color : red; }
         </style>
     </head>
     <body>
@@ -20,5 +27,16 @@
             <h1>섹션 임당</h1>
             <p>섹션 임당</p>
         </div>
+
+        <table border="1">
+            <tr>
+                <th>이름</th>
+                <th>지역</th>
+            </tr>
+            <tr>
+                <td>박수빈</td>
+                <td>관악구</td>
+            </tr>
+        </table>
     </body>
 </html>
