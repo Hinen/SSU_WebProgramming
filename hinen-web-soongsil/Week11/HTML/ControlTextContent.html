@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        <script>
+            window.onload = function () {
+                var html = "";
+                for (var i = 0; i < 10; i++) {
+                    html += "<h1>Test Title " + i + "</h1>";
+                }
+
+                // 태그 적용이 안된 상태로 순수 텍스트로 그대로 표시
+                document.body.textContent = html;
+
+                // 태그가 올바르게 적용되어 h1으로 텍스트가 표시
+                //document.body.innerHTML = html;
+            };
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
