@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+
+        <script>
+            function func(callback) {
+                for (var i = 0; i < 10; i++) {
+                    callback();
+                }
+            }
+
+            var callback = function () {
+                alert("콜백 함수 호출");
+            }
+
+            func(callback);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
