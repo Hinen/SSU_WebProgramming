@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+
+        <script>
+            window.onload = function () {
+                function change(target, textParam) {
+                    target.style.color = "orange";
+                    target.style.backgroundColor = "red";
+                    target.innerHTML = "From JavaScript - " + textParam;
+                }
+
+                // getElementById
+                var header = document.getElementById("TestTitle");
+                change(header, "getElementById");
+
+                // querySelector
+                header = document.querySelector("h2");
+                change(header, "querySelector");
+
+                // querySelectorAll
+                header = document.querySelectorAll("h3");
+                for (var i = 0; i < header.length; i++) {
+                    var h = header[i];
+                    change(h, "querySelectorAll");
+                }
+
+                // getElementsByClassName
+                header = document.getElementsByClassName("TestClass");
+                for (var i = 0; i < header.length; i++) {
+                    var h = header[i];
+                    change(h, "getElementsByClassName");
+                }
+
+                // getElementsByName
+                header = document.getElementsByName("TestName");
+                for (var i = 0; i < header.length; i++) {
+                    var h = header[i];
+                    change(h, "getElementsByName");
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <h1 id="TestTitle">Test Title - 1</h1>
+
+        <h2>Test Title - 2</h2>
+        <h2>Test Title - 3</h2>
+
+        <h3>Test Title - 4</h3>
+        <h3>Test Title - 5</h3>
+
+        <h2 class="TestClass">Test Title - 6</h2>
+        <h4 class="TestClass">Test Title - 7</h4>
+
+        <h2 name="TestName">Test Title - 8</h2>
+        <h4 name="TestName">Test Title - 9</h4>
+    </body>
+</html>

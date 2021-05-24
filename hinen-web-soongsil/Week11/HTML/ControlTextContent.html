@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+
+        <script>
+            window.onload = function () {
+                var html = "";
+                for (var i = 0; i < 10; i++) {
+                    html += "<h1>Test Title " + i + "</h1>";
+                }
+
+                document.body.innerHTML =
+                    "<div id='div1'></div>" +
+                    "<div id='div2'></div>";
+
+                // 태그 적용이 안된 상태로 순수 텍스트로 그대로 표시
+                document.getElementById("div1").textContent = html;
+
+                // 태그가 올바르게 적용되어 h1으로 텍스트가 표시
+                document.getElementById("div2").innerHTML = html;
+            };
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

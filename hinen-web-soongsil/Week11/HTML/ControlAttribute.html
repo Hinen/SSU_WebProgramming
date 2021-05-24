@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+
+        <script>
+            window.onload = function () {
+                var image = document.getElementById("TestImage");
+
+                image.src = "http://placehold.it/300x200";
+                image.width = 300;
+                image.height = 200;
+
+                var imageClassName = image.getAttribute("class");
+                if (imageClassName == "TestClass1")
+                    image.setAttribute("class", "TestClass2");
+
+                var testClass = document.getElementsByClassName("TestClass1");
+                if (testClass.length == 0)
+                    alert("not found TestClass1");
+            };
+        </script>
+    </head>
+    <body>
+        <img id="TestImage" class="TestClass1">
+    </body>
+</html>
