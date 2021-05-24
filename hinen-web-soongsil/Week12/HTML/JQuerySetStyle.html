@@ -7,6 +7,15 @@
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script>
             $(document).ready(function() {
+                var html = "";
+                for (var i = 0; i < 3; i++)
+                    html += "<div class='box'></div>";
+
+                for (var i = 0; i < 256; i++)
+                    html += "<div class='bg'></div>";
+
+                document.body.innerHTML = html;
+
                 // 1
                 $(".box").css("float", "left")
                     .css("margin", 10)
@@ -22,12 +31,15 @@
                     height: 200,
                     backgroundColor: "blue"
                 });
+
+                // bg
+                $(".bg").css({
+                    height: 2,
+                    backgroundColor: function(i) {
+                        return "rgb(" + i + ", " + i + ", " + i + ")";
+                    }
+                });
             });
         </script>
     </head>
-    <body>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </body>
 </html>
