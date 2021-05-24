@@ -8,13 +8,13 @@
         <script>
             $(document).ready(function() {
                 // 1
-                $("img").attr("alt", "JQuery 라이브러리를 사용한 속성 1");
-                $("img").attr("src", "http://placehold.it/100x100");
-                $("img").attr("width", "100");
-                $("img").attr("height", "100");
+                $(".img1").attr("alt", "JQuery 라이브러리를 사용한 속성 1");
+                $(".img1").attr("src", "http://placehold.it/100x100");
+                $(".img1").attr("width", "100");
+                $(".img1").attr("height", "100");
 
                 // 2
-                $("img").attr({
+                $(".img2").attr({
                     alt: "JQuery 라이브러리를 사용한 속성 2",
                     src: "http://placehold.it/200x200",
                     width: 200,
@@ -22,7 +22,7 @@
                 });
 
                 // 3
-                $("img").attr({
+                $(".img3").attr({
                     alt: "JQuery 라이브러리를 사용한 속성 3",
                     src: function(index) {
                         var size = (index + 1) * 100;
@@ -37,8 +37,18 @@
         </script>
     </head>
     <body>
-        <img/>
-        <img/>
-        <img/>
+        <img class="img1"/>
+        <img class="img1"/>
+        <img class="img1"/>
+
+        <br/>
+        <img class="img2"/>
+        <img class="img2"/>
+        <img class="img2"/>
+
+        <br/>
+        <img class="img3"/>
+        <img class="img3"/>
+        <img class="img3"/>
     </body>
 </html>
