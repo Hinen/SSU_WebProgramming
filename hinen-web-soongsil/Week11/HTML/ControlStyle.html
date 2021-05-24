@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+
+        <script>
+            window.onload = function () {
+                var html = "";
+                for (var i = 0; i < 256; i++) {
+                    html += "<div></div>";
+                }
+
+                document.body.innerHTML = html;
+
+                var divArr = document.querySelectorAll("div");
+                for (var i = 0; i < divArr.length; i++) {
+                    var div = divArr[i];
+                    div.style.height = "2px";
+                    div.style.background = "rgb(" + i + ", " + i + ", " + i + ")";
+                }
+            };
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
