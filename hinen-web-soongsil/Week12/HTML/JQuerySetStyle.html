@@ -7,11 +7,21 @@
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script>
             $(document).ready(function() {
+                // 1
                 $(".box").css("float", "left")
                     .css("margin", 10)
                     .css("width", 100)
                     .css("height", 100)
                     .css("backgroundColor", "red");
+
+                // 2
+                $(".box").css({
+                    float: "left",
+                    margin: 10,
+                    width: 200,
+                    height: 200,
+                    backgroundColor: "blue"
+                });
             });
         </script>
     </head>
