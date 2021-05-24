@@ -11,11 +11,17 @@
                 }
             }
 
+            /*
             var callback = function () {
                 alert("콜백 함수 호출");
             }
 
             func(callback);
+            */
+
+            func(function () {
+                alert("콜백 함수 호출");
+            });
         </script>
     </head>
     <body>
