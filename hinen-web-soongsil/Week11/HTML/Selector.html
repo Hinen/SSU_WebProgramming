@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+
+        <script>
+            window.onload = function () {
+                // getElementById
+                var header = document.getElementById("TestTitle");
+
+                header.style.color = "orange";
+                header.style.backgroundColor = "red";
+                header.innerHTML = "From JavaScript - getElementById";
+
+                // querySelector
+                header = document.querySelector("h2");
+                header.style.color = "orange";
+                header.style.backgroundColor = "red";
+                header.innerHTML = "From JavaScript - querySelector";
+            };
+        </script>
+    </head>
+    <body>
+        <h1 id="TestTitle">Test Title - 1</h1>
+        <h2>Test Title - 2</h2>
+        <h2>Test Title - 3</h2>
+    </body>
+</html>
