@@ -1,6 +1,0 @@
-[submodule "weather/web_backend"]
-	path = weather/web_backend
-	url = ../../SSU-WEATHER/web_backend.git
-[submodule "weather/web_frontend"]
-	path = weather/web_frontend
-	url = ../../SSU-WEATHER/web_frontend.git
