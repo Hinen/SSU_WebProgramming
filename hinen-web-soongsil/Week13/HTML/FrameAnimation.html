@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+
+        <script>
+            window.onload = function() {
+                var images = [
+                    "run-1.png",
+                    "run-2.png",
+                    "run-3.png",
+                    "run-4.png",
+                    "run-5.png",
+                    "run-6.png",
+                    "run-7.png",
+                    "run-8.png"
+                ];
+
+                var frame = 0;
+                var sprite = document.getElementById("sprite");
+
+                setInterval(function() {
+                    sprite.src = "../Resources/" + images[frame % images.length];
+                    frame++;
+                }, 1000 / 20);
+            };
+        </script>
+    </head>
+    <body>
+        <img id="sprite">
+    </body>
+</html>
