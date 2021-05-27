@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+
+        <script>
+            window.onload = function() {
+                var input1 = document.querySelectorAll("input")[0];
+                var input2 = document.querySelectorAll("input")[1];
+
+                input1.onkeydown = function() {
+                    if (this.maxLength <= input1.value.length)
+                        input2.focus();
+                };
+
+                input2.onkeydown = function(event) {
+                    var e = event || window.event;
+
+                    // keycode 8 is backSpace
+                    if (e.keyCode == 8 && input2.value.length == 0)
+                        input1.focus();
+                };
+            }
+        </script>
+    </head>
+    <body>
+        <input type="nutmber" maxlength="6">
+        <span>-</span>
+        <input type="number" maxlength="7">
+    </body>
+</html>
