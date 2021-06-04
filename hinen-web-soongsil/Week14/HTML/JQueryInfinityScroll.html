@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>20192762 박수빈</title>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                var appendDocument = function () {
+                    for (var i = 0; i < 20; i ++)
+                        $('<h1>Test Text</h1>').appendTo('body');
+                };
+
+                // init
+                appendDocument();
+
+                $(window).scroll(function () {
+                    var windowHeight = $(window).scrollTop() + $(window).height();
+                    var documentHeight = $(document).height();
+
+                    if (windowHeight >= documentHeight)
+                        appendDocument();
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
